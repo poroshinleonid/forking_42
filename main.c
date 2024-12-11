@@ -161,7 +161,6 @@ int main(int argc, char** argv)
         read_row(data, msg_tmp, remainder_chunk_len);
     }
     write(1, msg, msg_len + 1);
-    write(1, "|\n", 2);
     free(msg);
 
 
