@@ -204,7 +204,7 @@ int main(int argc, char** argv)
     u8 r2 = root[7*4 + 2];
     u16 msg_len = r1 + r2;
     // u16 msg_len = 128;
-    printf("a %d\n", msg_len);
+    // printf("a %d\n", msg_len);
     // printf("msg_len = %d", msg_len);
     i8 *msg = (i8*)malloc(msg_len + 1);
     msg[msg_len] = 0;
