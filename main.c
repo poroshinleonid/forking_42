@@ -140,12 +140,8 @@ int main(int argc, char** argv)
     u8 r1 = root[7*4];
     u8 r2 = root[7*4 + 2];
     u16 msg_len = r1 + r2;
-    // u16 msg_len = 128;
-    // printf("a %d\n", msg_len);
-    // printf("msg_len = %d", msg_len);
     i8 *msg = (i8*)malloc(msg_len + 1);
     msg[msg_len] = 0;
-    // u32 msg_pos = root - ((header->width * 4) * 2) + 2*4;
     u8 chunk_count = msg_len / 18;
     u8 remainder_chunk_len = msg_len % 18;
     i8 *data = root - (bytew * 2) + 8;
